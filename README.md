@@ -20,12 +20,16 @@ Two prototypes exploring a “spine” made of linked points/vertebrae:
 
 This is the base for “little animal fellas” that move as a connected chain.
 
+![Image](https://github.com/user-attachments/assets/4b4659f8-2e72-4ffd-a828-e4dfde4181e4)
+
 ### 2) Ray casting / visibility cone (2D)
 A player with velocity-based facing direction casts rays into the scene:
 - rays are cast inside a forward cone
 - extra rays are added toward obstacle corners for cleaner visibility edges
 - the visible region is drawn as a filled shape
 - enemies are only drawn if they are inside the cone *and* not blocked by obstacles (line of sight)
+
+![Image](https://github.com/user-attachments/assets/59ca519f-9bf8-4eee-b57e-117019e1a2e0)
 
 ### 3) Movement helper
 A small movement function that applies acceleration + friction and constrains the player inside the canvas bounds.
